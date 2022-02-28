@@ -142,7 +142,7 @@ const Main = () => {
            
             <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span> .(clickMe...)</span>
+                <span> .clickMe())</span>
             </Center>
 
             <Contact target="_blank" to={{pathname:"mailto:samiulbasirfahim360@hotmail.com"}}>
@@ -159,7 +159,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    .(sayHi...)
+                    .sayHi()
                 </motion.h2>
             </Contact>
             <BLOG to="/blog">
@@ -208,7 +208,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    .(about...)
+                    .about()
                 </motion.h2>
             </ABOUT>
             <SKILLS to="/skills">
@@ -224,7 +224,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    .(My Skills...)
+                    .mySkills()
                 </motion.h2>
             </SKILLS>
 
