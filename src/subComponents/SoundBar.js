@@ -58,7 +58,7 @@ const SoundBar = () => {
     const handleClick = () => {
         setClick(!click);
 
-        if(!click){
+        if(click){
             ref.current.play();
         }else{
             ref.current.pause();
@@ -66,11 +66,11 @@ const SoundBar = () => {
     }
     return (
         <Box onClick={() => handleClick()}>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
-            <Line click={click}/>
+            <Line click={!click}/>
+            <Line click={!click}/>
+            <Line click={!click}/>
+            <Line click={!click}/>
+            <Line click={!click}/>
 
 
             <audio src={music} ref={ref}  loop />
