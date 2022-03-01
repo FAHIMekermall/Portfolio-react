@@ -1,20 +1,25 @@
-import React from "react";
 import styled from "styled-components";
-import { DarkTheme } from "../components/Themes";
+import { DarkTheme, mediaQueries } from "../components/Themes";
 
 const Logo = styled.h1`
-    display: inline-block;
-    color: ${(props) =>
-        props.color === "dark" ? DarkTheme.text : DarkTheme.body};
+  display: inline-block;
+  color: ${(props) =>
+    props.color === "dark" ? DarkTheme.text : DarkTheme.body};
+  position: fixed;
+  left: 2rem;
+  top: 2.4rem;
 
-    position: fixed;
-    left: 2rem;
-    top: 2.4rem;
-    z-index: 3;
+  z-index: 3;
+
+  ${mediaQueries(40)`
+      font-size:1.5em;
+      left:1rem;
+      top:2rem;
+  `};
 `;
 
 const LogoComponent = (props) => {
-    return <Logo color={props.theme}>FAHIM</Logo>;
+  return <Logo color={props.theme}>FAHIM</Logo>;
 };
 
 export default LogoComponent;
